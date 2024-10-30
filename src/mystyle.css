@@ -1,0 +1,92 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: black;
+}
+
+/* Text style and animation */
+.marquee-text {
+  display: flex;
+  font-size: 1.5em;
+  color: gray;
+  animation: marquee 20s linear infinite;
+
+}
+
+/* Animation for moving the text horizontally */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Base styling for the container */
+.container {
+  max-width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Table styling with rounded edges */
+.table-bordered {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add rounded corners to the table */
+  overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Table header and cell styling */
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+/* Table header styling */
+.table-bordered thead {
+  background-color: #0073e6;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Zebra stripe effect */
+.table-bordered tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-bordered tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effect */
+.table-bordered tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* Cell text styling */
+.table-bordered th {
+  letter-spacing: 0.05em;
+}
+
+.table-bordered td {
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Title styling */
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
